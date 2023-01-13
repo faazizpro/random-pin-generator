@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Pin Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="flex flex-col max-w-7xl mt-32 md:flex-row md:h-48 mx-auto border border-gray-500 rounded-lg">
+      <div class="md:flex md:items-center md:justify-center md:w-1/2 bg-gray-800 rounded-lg">
+        <div class="p-6  ">
+          <h1 class="text-white  text-2xl md:text-3xl font-bold">Get <span class="text-blue-400">Random Pin</span> Generator</h1>
+          <p class="text-gray-400 text-lg font-medium mt-2">Get unlimited random pin number & you can use it.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center pb-6 md:py-6 md:w-2/3">
+        <div class="flex flex-col md:flex-row p-2 border rounded-xl focus-within:border-green-300 ">
+            <input class="px-6 py-2 text-gray-700 font-bold text-xl placeholder:text-gray-400 placeholder:font-semibold outline-none focus:placeholder-transparent" placeholder="Random Pin" type="text">
+            <button class="text-white px-4 py-3 bg-gray-700 font-medium tracking-wider hover:bg-gray-600 duration-300">Copy</button>
+        </div>
+      </div>
+    </section>
+    <script src="./JS/pin.js"></script>
+  </body>
 </html>
