@@ -23,5 +23,7 @@ document.getElementById('pin-generate').addEventListener('click', function(){
 document.getElementById('copy').addEventListener('click', function () {
     const copyText = document.getElementById('show-pin');
     navigator.clipboard.writeText(copyText.value);
-    alert(`Pin Copied: ${copyText.value}`)
+    alert(`Pin Copied: ${copyText.value}`);
+    const inputField = document.getElementById('show-pin');
+    inputField.value = '';
 });
